@@ -1,0 +1,14 @@
+.title-picture {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: var(--main-txt-color);
+}
