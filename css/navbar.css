@@ -1,6 +1,8 @@
 .navigation {
-  background: linear-gradient(90deg, #b3b5b2, #d9d9d9, #e6e6e6, #ffffff);
-  border: 3px solid teal;
+  /* background: linear-gradient(90deg, #b3b5b2, #d9d9d9, #e6e6e6, #ffffff); */
+  background-image: url(../assets/pictures/marble-black.jpg);
+  background-size: 100% auto;
+  border: 3px solid var(--main-txt-color);
   position: sticky;
   top: 8px;
   /* height: 5em; */
@@ -10,21 +12,40 @@
 .navigation__button {
   text-decoration: none;
   color: var(--main-txt-color);
+  padding: 5px 20px;
+  border-radius: 24px;
 }
 
-/* entfernen der punkte vor der Liste, Liste an Rand, items nebeneinander */
 .navigation__menu {
   list-style: none;
-  padding: 0;
-  display: flex;
+  padding: 10px 0;
+  /* display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 42px;
 }
 
-.navigation__menu > li:hover {
-  background-color: teal;
-  transition: 0.2s;
+.navigation__button:hover {
+  color: #000000;
+  background: linear-gradient(
+    135deg,
+    #c5ac86,
+    #e3d4bb,
+    #e8ddc7,
+    #ede5d7,
+    #ffffff
+  );
+  border-radius: 12px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.navigation__menu > li {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
