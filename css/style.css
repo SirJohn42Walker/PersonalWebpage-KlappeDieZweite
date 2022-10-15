@@ -11,7 +11,51 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.mystery-man {
-  display: flex;
-  justify-content: center;
+.inbetween {
+  /* background: linear-gradient(#b2b5b2, #e5e5e5); */
+  background-image: url(../assets/pictures/marble-2398946.jpg);
+  background-size: 100% auto;
+  padding: 25px;
+  display: grid;
+  gap: 25px;
+  grid-template-areas:
+    "a b b"
+    "a c c"
+    "d e e";
 }
+
+.picture {
+  /* display: flex;
+  justify-content: center; */
+  grid-area: a;
+  border: 10px solid #e3d4bc;
+  border-radius: 70px;
+}
+.inbetween__interests {
+  grid-area: b;
+}
+
+.inbetween__skills {
+  grid-area: c;
+}
+
+.inbetween__contact {
+  grid-area: d;
+  background: linear-gradient(
+    135deg,
+    #c5ac86,
+    #e3d4bb,
+    #e8ddc7,
+    #ede5d7,
+    #ffffff
+  );
+  border-radius: 20px;
+}
+
+.inbetween__contact--text {
+  padding: 10px;
+}
+
+/* .divider {
+  background-image: url(../assets/pictures/hd-wallpaper-5783817.jpg);
+} */
